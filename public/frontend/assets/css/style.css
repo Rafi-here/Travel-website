@@ -731,6 +731,78 @@ body.dark-theme {
           box-shadow: 0 8px 24px rgba(39, 69, 190, 0.1);
 }
 
+/* ==== Crew Section ==== */
+.crew {
+  padding: 80px 0;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.crew__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.crew__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.crew__card {
+  width: 180px;
+  text-align: center;
+}
+
+.crew__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crew__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.crew__placeholder {
+  color: #777;
+  font-size: 14px;
+}
+
+.crew__name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 8px;
+}
+
+.crew__position {
+  font-size: 14px;
+  color: #666;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 /*=============== FOOTER ===============*/
 .footer__container {
   row-gap: 2.5rem;

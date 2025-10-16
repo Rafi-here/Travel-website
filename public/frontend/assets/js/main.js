@@ -110,3 +110,15 @@ sr.reveal(".home__value", { delay: 100 });
 sr.reveal(".logos__img", { interval: 100 });
 sr.reveal(".values__images, .contact__content", { origin: "left" });
 sr.reveal(".value__content, .contact__images", { origin: "right" });
+
+
+const items = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+items.forEach(item => observer.observe(item));
